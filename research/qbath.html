@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Simulation of Shocked Methane Including Quantum Nuclear Effects | Materials Computation and Theory Group</title>
+<!-- InstanceEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29461366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("#sidebar").load("sidebar.html");
+	});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="menu">
+    <div id="sidebar">
+    </div>
+  </div>
+
+
+<div id="main">
+<!-- InstanceBeginEditable name="Content" -->
+<div id="title">Simulation of Shocked Methane Including Quantum Nuclear Effects</div>
+<p><a href="../research.html">&lt; back to research overview </a></p>
+<div class="story">
+  <p>Much of the theoretical research on shock compression utilizes either analytical interatomic energy models or DFT. Great efforts have been made to improve the fit of interatomic potentials to DFT and other more accurate results. While this is very important work, it is important to note that no matter how good the fit it, classical molecular dynamics lacks the quantum vibrational effects that can play an important role in shock compression. In some cases, the lack of quantum corrections may cause errors of magnitudes comparable or greater than the ill-represented potential energy surface. The classical MD simulations are only approximately correct for temperatures that are higher than the Debye temperature. </p>
+  <p>The conventional molecular dynamics approach is generally too expensive for quantitative study of shocked materials. By using a multi-scale shock techinique (MSST), the challenge is circumvented. MSST has been shown to approximately reproduce the kinetics of shocked materials.</p>
+  <p>&nbsp; </p>
+  <div align="center">
+    <table border="0" cellpadding="5">
+      <tr>
+        <td width="276"><div align="center"><img src="qbmsst.png" width="200" height="181" /></div></td>
+        <td width="333"><div align="center"><img src="qbmsst_ch42.png" width="300" height="252" /></div></td>
+      </tr>
+    </table>
+</div>
+  <p>Recently, we incorporated the quantum nuclear effects into MSST. We introduce a modification of the MSST that couples to a quantum thermal bath decribed by a colored noise Langevin thermostat. The new method, QB-MSST, is of comparable computational cost (20% to 30% more expensive) to MSST and self-consistently incorporates quantum heat capacities and Bose-Einstein Harmonic vibrational distributions. As a first test, we study shock-compressed methane using the ReaxFF potential. The Hugoniot curves predicted from the new method are found comparable with existing experimental data. We find that the self-consistent nature of the method results in the onset of chemistry at 40% lower pressure on the shock Hugoniot than observed with classical molecular dynamics. The temperature shift associated with quantum heat capacity is determined to be the primary factor in this shift. </p>
+<p>&nbsp;</p>
+  <p><span class="subsubtitle">Tutorial:</span><br />
+    <a href="../Shock_compression_molecular_dynamics.pdf" target="_blank"><em>Atomistic Calculations of Dynamic Compression of Materials</em></a>, Evan Reed, Computational Chemistry and Materials Science program (Lawrence Livermore National Laboratory).
+    </p>
+  <p><span class="subsubtitle">Publication:</span><br />
+    Qi, T., Reed, E. J., <a href="http://pubs.acs.org/doi/abs/10.1021/jp308068c" target="_blank">Simulations of Shocked Methane Including Self-Consistent Semiclassical Quantum Nuclear Effects</a>. <em>Journal of Physical Chemistry </em>A, <strong>116</strong>, 10451–10459, doi:10.1021/jp308068c (2012).</p>
+  <p><br />
+  </p>
+</div>
+
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

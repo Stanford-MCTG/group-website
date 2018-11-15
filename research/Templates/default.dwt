@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Materials Computation and Theory Group | Stanford University</title>
+<!-- TemplateEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div id="wrap">
+<div id="menu">
+  <table width="187" border="0" cellpadding="3" cellspacing="0" class="style6">
+    <tr>
+      <td width="19"><img src="../bullet.gif" width="16" height="16" border="0" /></td>
+      <td width="156"><strong><a href="../index.html">Home</a></strong></td>
+    </tr>
+    <tr>
+      <td><img src="../bullet.gif" width="16" height="16" border="0" /></td>
+      <td><a href="../research.html"><strong>Research</strong></a></td>
+    </tr>
+    <tr>
+      <td><img src="../bullet.gif" width="16" height="16" border="0" /></td>
+      <td><strong><a href="../staff.html">Staff</a></strong></td>
+    </tr>
+    <tr>
+      <td><img src="../bullet.gif" width="16" height="16" border="0" /></td>
+      <td><a href="../publications.html"><strong>Publications</strong></a></td>
+    </tr>
+    <tr>
+      <td><img src="../bullet.gif" width="16" height="16" border="0" /></td>
+      <td><strong><a href="../teaching.html">Teaching</a></strong></td>
+    </tr>
+    <tr>
+      <td><img src="../bullet.gif" width="16" height="16" border="0" /></td>
+      <td><strong><a href="../contact.html">Contact</a></strong></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="187" border="0" cellspacing="0" cellpadding="5">
+    <tr>
+      <td width="187"><div align="center"><a href="http://mse.stanford.edu/" target="_blank"><img src="../SU_MSE.gif" width="143" height="72" border="0" /></a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center"><a href="http://me.stanford.edu/research/centers/ahpcrc/" target="_blank"><img src="../ahpcrc.jpg" width="128" height="71" border="0" /></a></div></td>
+    </tr>
+    <tr>
+      <td><div align="center"><a href="http://www.nasa.gov/" target="_blank"><img src="../nasaz.jpg" width="128" height="103" border="0" /></a></div></td>
+    </tr>
+  </table>
+
+</div>
+<div id="main">
+<!-- TemplateBeginEditable name="Content" -->
+
+<!-- TemplateEndEditable -->
+</div>
+</div>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66532656); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66532656ns.gif" /></p></noscript>
+</body>
+</html>

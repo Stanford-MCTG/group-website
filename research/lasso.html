@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Model Reduction of Large-Scale Chemical Reaction Networks via L1 Regularization | Materials Computation and Theory Group</title>
+<!-- InstanceEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29461366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("#sidebar").load("sidebar.html");
+	});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="menu">
+    <div id="sidebar">
+    </div>
+  </div>
+
+
+<div id="main">
+<!-- InstanceBeginEditable name="Content" -->
+<div id="title">Model Reduction of Large-Scale Chemical Reaction Networks via L<sub>1</sub> Regularization</div>
+<p><a href="../research.html">&lt; back to research overview </a></p>
+<div class="story">
+
+<p><strong>We develop a new method for computationally tractable model reduction of large-scale chemical reaction networks using L<sub>1</sub> regularization. We use this method to study liquid methane under the high temperature and pressure conditions that occur during shock compression, and find that CH<sub>4</sub> decomposition can be modeled with less than 9% relative error using only 11% of reactions. This work demonstrates how L<sub>1</sub> regularization can be leveraged to formulate chemical model reduction as a convex optimization problem, enabling efficient reduction of reaction networks involving as many as tens of thousands of reactions with minimal human intervention.</strong></p>
+
+<p>One of the overarching goals in computational materials science is the development of fast, accurate and scalable models for simulating complex chemical or materials processes. These processes can often involve thousands of molecules and tens of thousands of reactions. Thus, it is necessary to seek highly reduced models that can sufficiently describe important features of the system. We show that model reduction can be formulated as a convex optimization problem, which is computationally efficient to solve and has a single minimum, distinguishing it from many challenging high-dimensional optimization problems faced in materials science. Furthermore, L<sub>1</sub> regularization allows us to control the tradeoff between model reduction and error via a single regularization parameter.</p>
+
+<p>We apply our algorithm to a molecular dynamics simulation of high temperature and high pressure methane, under thermodynamic conditions similar to that of liquid methane undergoing shock compression. We first use bond length and duration criteria developed in <a href="http://pubs.acs.org/doi/abs/10.1021/jp308068c">previous work</a> to derive a stochastic model of the chemical reaction network consisting of more than 2600 elementary reactions and their corresponding reaction rate coefficients. We are then able to compute the tradeoff between reduction of the network and error in the resulting stochastic model by tuning the L<sub>1</sub> regularization parameter.
+</p>
+
+<p align="center">
+<img src="lasso.png" border="0" width="450"> <br />
+<em>CH<sub>4</sub> decomposition can be modeled with less than 9% relative error using only 11% of reactions. We can tradeoff between reduction and error by tuning the L<sub>1</sub> regularization parameter &#955.</em>
+</p>
+
+<p><span class="subsubtitle">Publication:</span><br />
+<p>Yang, Q., Sing-Long, C. A., Reed, E. J., <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=10186274&fileId=S2059852116001249" target="_blank">L1 Regularization-Based Model Reduction of Complex Chemistry Molecular Dynamics for Statistical Learning of Kinetic Monte Carlo Models</a>. <em>MRS Advances</em>, doi:10.1557/adv.2016.124 (2016).</p>
+</p>
+</div>
+
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

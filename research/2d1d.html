@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Data mining for 2D and 1D materials</title>
+
+<link href="../style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29461366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("#sidebar").load("sidebar.html");
+	});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="menu">
+    <div id="sidebar">
+    </div>
+  </div>
+<div id="main">
+
+<div id="title">Data mining to discover hundreds of new 2D and 1D materials</div>
+<p><a href="../research.html">&lt; back to research overview </a></p>
+<div class="story" align="justify">
+
+<p>
+<b>We created a database of hundreds of 2d layered materials and 1d
+  molecular
+  wires.<br/> <a href="http://web.stanford.edu/group/evanreed/Cheon_NanoLett_2017_SI2.xlsx"
+  target="_blank">Click here to download the database!</a> </b>
+</p>
+<p>
+ Layered materials have vast potential in applications, both in the
+ bulk form and in a single layer. Bulk layered materials have been
+ widely used for various technologies, for example in energy storage;
+ most commercial Li-ion batteries today use layered materials such as
+ graphite or layered metal oxides to store lithium. In a single layer
+ form, they provide advantages such as maximum mechanical flexibility
+ and optical transparency. Applications in nanoscale devices are
+ numerous, and atomically thin transistors and resonators have been
+ demonstrated. Even though there is a lot of research interest in
+ layered two-dimensional materials, only a few of them are being
+ studied. Graphene, BN, transition metal dichalcogenides and some
+ others like phosphorene dominate the research on 2D materials.
+</p>
+
+<p align="center">
+<img src="../pics/2d1d.png" border="0" width="400"> <br />
+<em>Examples of 2d layered (left) and 1d molecular wire (right)
+  structures that our data mining algorithm discovered. </em>
+</p>
+
+
+
+<p>
+ In this work, we use data-mining to screen almost 60,000 materials
+ from the Materias Project database to identify discover 1173 2D
+ layered materials, 487 1D materials, 98 lattice-commensurate
+ heterostructures and 325 materials with piezoelectric monolayers. To
+ do this, we developed a novel algorithm that can determine the
+ dimensionalisy of the strongly bonded subunits in the crystal. We
+ find bonds between atoms by comparing interatomic distances between
+ all pairs of atoms in a unit cell with the sum of their bond
+ radii. If the distances are smaller than the sum of bond radii +
+ tolerance of 0.45 angstroms (to account for bond length variability),
+ we consider the pair bonded. We find all connected clusters of atoms
+ in the unit cell, and do the same for a 2x2x2 supercell of the unit
+ cell. Now, we count the number of atoms in the connected clusters in
+ the original unit cell and the 2x2x2 supercell. If the connected
+ cluster is two-dimensional, the number of atoms in a cluster would
+ have increased to 4 times the number in the original unit cell,
+ because the size of a two-dimensional object scales as length^2.
+</p>
+<p>
+ Using this algorithm, we identified 1173 2D weakly bonded solids and
+ 487 1D weakly bonded solids with unique chemical formulas, consisting
+ of 23 distinct chemical families of 2D weakly bonded solids and eight
+ chemical families of 1D weakly bonded solids. While layered materials
+ have received considerable attention, much less was known about bulk
+ inorganic crystals that consist of weakly bonded one-dimensional
+ chains, or molecular wires. Less than 20 such materials were found in
+ literature, and this work is the first to uncover a variety of 1D
+ weakly bonded solids. The majority of weakly bonded solids identified
+ in this work come from experimentally reported crystals composed of
+ stacks of 2D layers or 1D chains of bonded atoms.
+</p>
+<p>
+We also identify 98 weakly bonded lattice-commensurate
+ heterostructures, i.e. materials with weakly bonded adjacent units
+ with dissimilar properties. There has been much activity on
+ assembling layers of different materials to make van der Waals
+ heterostructures with new material properties3,4. However, the
+ fabrication of such heterostructures present a significant
+ experimental challenge. The materials identified in our work have the
+ substantial manufacturing advantage of being amenable to growth using
+ more conventional and scalable methods.
+</p>
+<p>
+We also present data on the band gaps of the 2D and 1D materials, as
+ well as the point groups. Crystal symmetries of bulk and monolayer 2D
+ materials can be different for many layered materials, and the
+ physical properties affected by them are also different. For example,
+ TMDs in the 2H phase with inversion symmetry in the bulk form are not
+ piezoelectric, but single layers of TMDs are piezoelectric. We
+ developed a method to calculate monolayer point group symmetries from
+ AA-stacking of the monolayers. Combining this with the band gap data,
+ we identify 2D piezoelectric material candidates from point group symmetries.
+</p>
+
+
+
+<p><span class="subsubtitle">Publication:</span><br /></p>
+<p>Cheon, G., Duerloo, K.-A. N., Sendek, A. D., Porter, C., Chen, Y., Reed, E. J., <a href="http://pubs.acs.org/doi/abs/10.1021/acs.nanolett.6b05229" target="_blank">Data Mining for New Two- and One-dimensional Weakly Bonded Solids and Lattice-commensurate Heterostructures</a>. <em>Nano Letters</em>, doi:10.1021/acs.nanolett.6b05229 (2017).</p>
+
+
+<p><br/></p>
+
+</div>
+
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

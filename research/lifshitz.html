@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>A defined Lifshitz model provides fast van der Waals computations for layered materials | Materials Computation and Theory Group</title>
+<!-- InstanceEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29461366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("#sidebar").load("sidebar.html");
+	});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="menu">
+    <div id="sidebar">
+    </div>
+  </div>
+
+<div id="main">
+  <div id="title">Can van der Waals (vdW) interactions be repulsive?</div>
+<p><a href="../research.html">&lt; back to research overview </a></p>
+<div class="story" align="justify">
+<p>
+  We discover, surprisingly, that a defined Lifshitz-based model can provide vdW potentials to within 8-20% of advanced electronic structure calculations (ACFDT-RPA) while being orders of magnitude faster. Using this fast Lifshitz model, we study the vdW binding properties of 210 three-layered heterostructures. We discover the potential for repulsive three-body vdW effects among three-layered heterostructures.
+</p>
+
+
+
+<p>
+Computation of vdW-relevant nonlocal correlations within a density functional theory (DFT) framework is challenging. A simple inclusion of pairwise potentials is economical but can be qualitatively inaccurate for certain nanostructures. A seamless vdW formalism, the adiabatic-connection fluctuation-dissipation theorem within random phase approximation (ACFDT-RPA), has been empirically reported to be the most accurate but is inhibited by its demanding computational cost.
+</p>
+
+<p>
+As an alternative to the ACFDT-RPA, we apply a defined Lifshitz model to the study of vdW interactions for layered materials, including five transition metal dichalcogenide (TMD) monolayers, monolayer BN and graphene. Originating in 1956, the Lifshitz model gives an analytical expression describing the Casimir/vdW interaction between two macroscopic objects mediated by the polarizability of a medium body, using an electromagnetic formulation. Usually, the vdW interaction is attractive, holding many bulk layered materials together. However, Lifshitz showed that it is possible to generate a repulsive vdW interaction depending on the relationship between the dielectrics of the three bodies. In this study, we posed the question: can we find a repulsive vdW interaction in layered materials?
+</p>
+
+<p>
+To implement the Lifshitz models, we calculate DFT-based frequency-dependent dielectric functions of each layer. The Lifshitz model is intrinsically macroscopic and the extent to which it can be applied to the atomic scale is unknown. To apply the continuum-based model to the atomic scale, we discover that using a covalent atomic radius to define surface positions for TMD monolayers, surprisingly, leads to a reasonable agreement with ACFDT-RPA. We study three cases of three-layered heterostructures and find that the defined Lifshitz model provides the vdW potentials to within 8-20% of the ACFDT-RPA calculations.
+</p>
+
+<p align="center">
+<img src="bindingheterostructure.png" border="0" width="500"> <br />
+<em>Correlation-only binding energies in a layered heterostructure: monolayer MoSe<sub>2</sub>, MoS<sub>2</sub>, WS<sub>2</sub>. We discover that the energy magnitude of three-body effects (E<sub>b</sub>(21m3) - E<sub>b</sub>(21)) is much smaller than that of two-body effects (E<sub>b</sub>(23), E<sub>b</sub>(31)).</em>
+</p>
+
+<p>
+We apply the defined Lifshitz model to 210 three-layered heterostructures. We discover potential repulsive interactions in some three-layered heterostructures. Positive values of E<sub>b</sub>(21m3) indicate repulsive interactions between layer 2 and layer 1.
+</p>
+
+<p align="center">
+<img src="bindingmonolayer.png" border="0" width="250"> <br />
+<em>Correlation-only binding energies in monolayer stacking with a dielectric medium layer (monolayer BN/graphene).</em>
+</p>
+
+<p><span class="subsubtitle">Publication:</span><br /></p>
+<p>Zhou, Y., Pellouchoud, L. A., Reed, E. J., <a href="http://iopscience.iop.org/article/10.1088/2053-1583/aa528e" target="_blank">The Potential for Fast van der Waals Computations for Layered Materials Using a Lifshitz Model</a>. <em>2D Materials</em>, doi:10.1088/2053-1583/aa528e (2017).</p>
+
+
+<p><br/></p>
+
+</div>
+
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

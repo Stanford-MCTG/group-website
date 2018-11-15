@@ -1,0 +1,45 @@
+ &CONTROL
+                      prefix = 'graphane'
+                 calculation = 'relax' ,
+                restart_mode = 'from_scratch' ,
+                      outdir = '/afs/ir.stanford.edu/users/e/v/evanreed/tmp/' ,
+                  pseudo_dir = '/afs/ir.stanford.edu/users/e/v/evanreed/espresso-4.2.1/pseudo/' ,
+                     tstress = .true. ,
+                     tprnfor = .true. , 
+/
+ &SYSTEM
+                       ibrav = 4,
+                   celldm(1) = 4.65,
+                   celldm(3) = 1.7,
+                         nat = 4,
+                        ntyp = 2,
+                     ecutwfc = 30.0 ,
+                     ecutrho = 300.D0 ,
+                        nbnd = 8,
+                 occupations = 'smearing' ,
+                    smearing = 'gauss' ,
+                     degauss = 0.02
+ /
+ &ELECTRONS
+                    conv_thr = 1.D-8 ,
+                 mixing_beta = 0.3D0 ,
+ /
+ &IONS
+                ion_dynamics = 'bfgs' ,
+ /
+ &CELL
+               cell_dynamics = 'bfgs' ,
+              press_conv_thr = 0.4 ,
+                 cell_factor = 3.0,
+ /
+
+ATOMIC_SPECIES
+    C   12.00000   C.pbe-rrkjus.UPF
+    H   1.00000   H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS crystal  
+C        0.000000000  0.0000   0.000000000
+C        0.3333333333    0.6666666667    0.000000000
+H        0.0          0.0       0.31
+H        0.3333333333    0.6666666667    -0.29
+K_POINTS automatic
+  10 10 1   0 0 0

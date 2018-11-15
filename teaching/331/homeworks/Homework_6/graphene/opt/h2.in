@@ -1,0 +1,42 @@
+ &CONTROL
+                      prefix = 'h2'
+                 calculation = 'relax' ,
+                restart_mode = 'from_scratch' ,
+                      outdir = '/afs/ir.stanford.edu/users/e/v/evanreed/tmp/' ,
+                  pseudo_dir = '/afs/ir.stanford.edu/users/e/v/evanreed/espresso-4.2.1/pseudo/' ,
+                     tstress = .true. ,
+                     tprnfor = .true. , 
+/
+ &SYSTEM
+                       ibrav = 4,
+                   celldm(1) = 4.65,
+                   celldm(3) = 4.0,
+                         nat = 2,
+                        ntyp = 1,
+                     ecutwfc = 30.0 ,
+                     ecutrho = 300.D0 ,
+                        nbnd = 4,
+                 occupations = 'smearing' ,
+                    smearing = 'gauss' ,
+                     degauss = 0.02
+ /
+ &ELECTRONS
+                    conv_thr = 1.D-8 ,
+                 mixing_beta = 0.3D0 ,
+ /
+ &IONS
+                ion_dynamics = 'bfgs' ,
+ /
+ &CELL
+               cell_dynamics = 'bfgs' ,
+              press_conv_thr = 0.2 ,
+                 cell_factor = 3.0,
+ /
+
+ATOMIC_SPECIES
+    H   1.00000   H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS crystal  
+H        0.0          0.0       0.1
+H        0.0    0.0    -0.1
+K_POINTS automatic
+  10 10 1   0 0 0

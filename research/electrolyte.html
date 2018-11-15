@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/default.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Machine learning enables large-scale screening of candidate solid-state electrolytes for lithium-ion batteries | Materials Computation and Theory Group</title>
+<!-- InstanceEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29461366-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("#sidebar").load("sidebar.html");
+	});
+</script>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="menu">
+    <div id="sidebar">
+    </div>
+  </div>
+
+
+
+<div id="main">
+<!-- InstanceBeginEditable name="Content" -->
+<div id="title">Machine Learning Enables Large-scale Screening of Candidate Solid-state Electrolytes for Lithium-ion Batteries</div>
+<p><a href="../research.html">&lt; back to research overview </a></p>
+<div class="story">
+
+<p>
+<b>By unleashing machine learning algorithms on the last several decades' worth of data, we have predicted the performance of every known lithium-containing inorganic crystalline solid as a solid-state electrolyte in a lithium ion battery.</b>	
+</p>
+
+<p>
+Batteries will play an increasingly important role in society as our electronics become increasingly portable and as our transportation systems move away from fossil fuel-based energy sources. Although significant advances have been made in batteries over the last several decades, many issues remain, including concerns over cycle life and safety. By replacing the flammable liquid electrolyte of conventional batteries with a stable solid, we can drive significant improvements in battery safety, lifetime, and energy density. But solid batteries are complicated systems - and finding new electrolyte materials that can stand up to the many different demands of battery performance is no easy task. Candidate materials must exhibit high lithium conductivity, robust chemical and phase stability, a wide electrochemical stability window, low electronic conductivity, and low cost.
+</p>
+
+<p>
+The past several decades have seen many studies of candidate materials for solid-state electrolyte applications - but these studies typically focus only on ionic conductivity and candidates are chosen for study on a guess-and-check basis. For the first time, we have aggregated the available data from past studies and analyzed it though the lens of machine learning to drive new design insights. This allows us to strategically select for the most promising materials rather than continue in trial-and-error.
+</p>
+
+<p align="center">
+<img src="electrolyte.png" border="0" width="420"> <br />
+<em>For every stable, nonmetallic lithium-containing material, we predict the likelihood of exhibiting fast lithium conduction versus the level of model extrapolation required to make the prediction. We seek materials in the upper left-hand corner of the plot.</em>
+</p>
+
+<p>
+Ionic conductivity is generally thought to be the most restrictive constraint on candidate materials, and is also the most time consuming to evaluate computationally or experimentally. We compile data on 40 materials with both good and bad measured room temperature lithium conductivity values. We then &ldquo;show&rdquo; these examples to a logistic regression classifier, which &ldquo;learns&rdquo; to predict whether that material performed well or not based on the atomistic structure. Once this training is complete, we unleash the trained model on the more than 12,000 lithium-containing solids, and find that around 1,000 of them have a &gt;50% chance of exhibiting fast lithium conduction. To shrink the space of candidate materials further, we also predict the performance on a host of other metrics, including stability, electronic conduction, cost, and earth abundance. With all metrics considered, we are able to screen 12,000 candidates down to the 21 most promising structures in a matter of minutes. This work represents the first attempt to screen all known lithium-containing solids for electrolyte candidates with a holistic screening criteria, and because of the machine learning approaches employed we do it approximately one million times faster than evaluating each material one-by-one.
+</p>
+
+<p>
+In addition to identifying the most promising new materials, we also gain new insight on which performance requirements are the most restrictive across the full pool of candidates. We find, counterintuitively, that fast ionic conductivity is actually not the most restrictive constraint; in fact, it is more restrictive to screen only on stability and cost alone. This underscores the importance of the holistic approach in accelerating the search for the best new materials.
+</p>
+
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/j4IBN9oi9_E" frameborder="0" allowfullscreen=""></iframe></p>
+
+
+<p><span class="subsubtitle">Publication:</span><br /></p>
+<p>Sendek, A. D., Yang, Q., Cubuk, E. D., Duerloo, K.-A. N., Cui, Y., Reed, E. J., <a href="http://pubs.rsc.org/en/content/articlelanding/2016/ee/c6ee02697d" target="_blank">Holistic Computational Structure Screening of more than 12,000 Candidates for Solid Lithium-ion Conductor Materials</a>. <em>Energy & Environmental Science</em>, doi:10.1039/C6EE02697D (2016).</p>
+
+<p><span class="subsubtitle">News coverage:</span><br /></p>
+<p><a href="http://blogs.mathworks.com/headlines/2017/01/08/using-machine-learning-to-build-a-better-battery" target="_blank">Using machine learning to build a better battery</a>. MathWorks <em>Behind the Headlines</em> Blog, January 8, 2017. Join the Facebook discussion <a href="https://www.facebook.com/MATLAB/posts/10154126992236641" target="_blank">here</a> and <a href="https://www.facebook.com/MathWorks/posts/10154335598177449" target="_blank">here</a>!</p>
+<p><a href="http://sanfrancisco.cbslocal.com/2016/12/19/lithium-ion-battery-explosions-fires-stanford-university-research" target="_blank">Stanford Researchers Work On Solving Lithium-Ion Battery Explosions</a>. CBS SFBayArea, December 19, 2016</p>
+<p><a href="http://energy.stanford.edu/news/no-more-burning-batteries-scientists-turn-ai-create-safer-lithium-ion-batteries" target="_blank">No more burning batteries? Scientists turn to AI to create safer lithium-ion batteries</a>. Stanford Precourt Institute for Energy News, December 15, 2016</p>
+
+
+<p><br/></p>
+
+</div>
+
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+</div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

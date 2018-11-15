@@ -1,0 +1,32 @@
+Help:
+fs help
+
+To view which groups have what permissions in the current directory:
+fs listacl
+
+Setting acl privileges:
+fs setacl <directory> <sunetid or group> <privileges-list>
+Recursively descending:
+fsr setacl <directory> <sunetid or group> <privileges-list>
+
+Possible privileges:
+l -- lookup
+r -- read
+d -- delete
+w -- write
+k -- lock
+a -- administrative
+
+
+-------------------------Groups-------------------
+Creating a group:
+pts creategroup <your sunetid>:<name>
+Listing membership:
+pts membership <groupname> 
+Adding user:
+pts adduser <sunetid> <groupname>
+Removing user:
+pts removeuser <sunetid> <groupname>
+Deleting group:
+pts delete <groupname>
+

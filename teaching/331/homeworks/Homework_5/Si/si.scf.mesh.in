@@ -1,0 +1,30 @@
+ &CONTROL
+                       title = 'Silicon bulk' ,
+                 calculation = 'scf' ,
+                restart_mode = 'from_scratch' ,
+                      outdir = '/afs/ir.stanford.edu/users/e/v/evanreed/tmp/' ,
+                  pseudo_dir = '/afs/ir.stanford.edu/users/e/v/evanreed/espresso-4.2.1/pseudo/' ,
+                      prefix = 'silicon' ,
+                     tstress = .true. ,
+                     tprnfor = .true. ,
+ /
+ &SYSTEM
+                       ibrav = 2,
+                   celldm(1) = 10.10,
+                         nat = 2,
+                        ntyp = 1,
+                     ecutwfc = 18.0 ,
+ /
+ &ELECTRONS
+                    conv_thr = 1.0d-8 ,
+                 mixing_mode = 'plain' ,
+                 mixing_beta = 0.7 ,
+             diagonalization = 'david' ,
+ /
+ATOMIC_SPECIES
+   Si   28.08600  Si.pz-vbc.UPF 
+ATOMIC_POSITIONS 
+   Si      0.000000000    0.000000000    0.000000000    1  1  1 
+   Si      0.250000000    0.250000000    0.250000000    1  1  1 
+K_POINTS automatic
+  8 8 8 0 0 0

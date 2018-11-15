@@ -1,0 +1,6 @@
+ &inputpp
+     prefix = 'graphene' ,
+     outdir = '/afs/ir.stanford.edu/users/e/v/evanreed/tmp/' ,
+    filband = 'bands.dat'
+ /
+
